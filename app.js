@@ -6,8 +6,8 @@ generateGrid();
 // Change resolution based on user input
 const resolutionBtn = document.getElementById('change-resolution');
 resolutionBtn.addEventListener('click', e => {
-    numberOfColumns = prompt("Enter number of pixels per row.", 16)
-    if (numberOfColumns == null || numberOfColumns == "") {
+    numberOfColumns = prompt("Enter number of pixels per row.\nMust be <= 100.", 16)
+    if (numberOfColumns == null || numberOfColumns == "" || numberOfColumns >100) {
         numberOfColumns = 16;
     }
     removeAllChildNodes(container);
