@@ -1,6 +1,4 @@
 .container{
-    border-style: solid;
-    border-color: black;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -13,5 +11,10 @@
 .column{
     height: 16px;
     width: 16px;
-    background-color: antiquewhite;
+    border-style: dotted;
+    border-color: thistle;
+}
+
+.filled{
+    background-color: black;
 }
