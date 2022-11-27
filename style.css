@@ -1,6 +1,7 @@
 body{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container{
@@ -25,4 +26,14 @@ body{
 
 .filled{
     background-color: black;
+}
+
+.settings-footer{
+    display: flex;
+    justify-content: flex-end;
+    width: 90vh;
+}
+
+button{
+    margin: 16px 0px;
 }
