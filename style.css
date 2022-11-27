@@ -1,18 +1,26 @@
-.container{
+body{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 90vh;
+    height: 90vh;
+
 }
 
 .row{
+    display: flex;
+    flex: 1 0 auto;
     
 }
 
 .column{
-    height: 16px;
-    width: 16px;
     border-style: dotted;
     border-color: thistle;
+    flex: 1 0 auto;
 }
 
 .filled{

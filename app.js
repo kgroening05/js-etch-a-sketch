@@ -1,7 +1,10 @@
 // Create reference to container div
 const container = document.querySelector(".container");
-const numberOfRows = 16;
-const numberOfColumns = 16;
+let numberOfRows = 16;
+let numberOfColumns = 16;
+const sketchPadSize = 960;
+
+
 
 // Populate container div with 16 x 16 grid of square divs
 for (let rowindex = 0; rowindex < numberOfRows; rowindex++) {
@@ -14,6 +17,7 @@ for (let rowindex = 0; rowindex < numberOfRows; rowindex++) {
     }
     container.appendChild(row);
 }
+
 
 // Add event listener to each div in the grid to look for hover and change style to filled
 gridDiv = document.querySelectorAll('.column');
